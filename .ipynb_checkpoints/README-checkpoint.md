@@ -53,4 +53,43 @@ The prediction that was performed on the test set provided slightly more than 80
 
 `'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 800`
 
+<table>
+  <caption>Classification Report</caption>
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1-Score</th>
+      <th>Support</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0.67</td>
+      <td>0.57</td>
+      <td>0.62</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0.85</td>
+      <td>0.89</td>
+      <td>0.87</td>
+      <td>57</td>
+    </tr>
+  </tbody>
+</table>
+
+<div align="center">
+  <img src="conf_matrix.png" alt="Confusion Matrix" />
+  <p>Confusion Matrix</p>
+</div>
+
+<div align="center">
+  <img src="roc.png" alt="ROC/AUC" />
+  <p>ROC Curve and AUC Score</p>
+</div>
+
 As a result, Random Forest Classifier is a useful tool to predict if a loan will be paid or not based on the given dataset with around **80% accuracy**. This model can be improved further by applying some feature selection and/or engineering methods. Another way the improve the performance of the model is to collect more data. A larger dataset can help the model to learn more representative patterns.
